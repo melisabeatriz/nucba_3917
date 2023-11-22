@@ -1,0 +1,207 @@
+.container {
+  background-color: #282828;
+  padding: 16px;
+  border-radius: 16px;
+  width: fit-content;
+  margin: 20px 0;
+}
+
+.text-span {
+  color: #ff005c;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #6b7280;
+  margin: 20px 0;
+}
+
+.caja-mediana {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #e11d48;
+  margin: 20px 0;
+}
+.caja-grande {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #8c54fb;
+}
+
+/* Selectores */
+#selectorId {
+  color: #8c54fb;
+}
+
+.selectorClase {
+  color: #e11d48;
+}
+
+h5 {
+  background-color: #8c54fb;
+}
+
+/* unidades relativas */
+
+.small-font {
+  font-size: 10px;
+}
+.em {
+  /* la caja con clase large-font tiene 10px de font-size por lo que el em en este ejmplo serian 20px(2em) */
+  font-size: 2em;
+}
+
+.rem {
+  /* Este font-size son 32px porque el html por defecto tiene 16px de font-size */
+  font-size: 2rem;
+}
+
+.porcentaje {
+  width: 50%;
+  height: 50%;
+  background-color: #8c54fb;
+}
+
+.vh {
+  height: 10vh; /* 10% del alto del viewport */
+  background-color: #8c54fb;
+}
+
+.vw {
+  width: 10vw; /* 10% del ancho del viewport */
+  background-color: #8c54fb;
+}
+
+.bg-color {
+  background-color: crimson;
+}
+
+.bg-img {
+  background-image: url("./img/bg-pattern.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-repeat {
+  background-image: url("./img/bg-repeat.png");
+  background-repeat: repeat;
+}
+
+.bg-attach {
+  background-image: url("./img/bg-pattern.jpg");
+  background-attachment: fixed;
+  width: 300px;
+  height: 300px;
+}
+
+.bg-position {
+  background-image: url("./img/messi.webp");
+  background-position: center;
+}
+
+.bg-size {
+  background-size: cover;
+}
+
+.color p {
+  margin: 0;
+  color: crimson;
+}
+
+/* Box shadow */
+.caja-shadow {
+  background: #8c54fb;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.offsetXY {
+  box-shadow: 10px 10px; /* offset-x | offset-y */
+}
+
+.blurRadius {
+  box-shadow: 10px 10px 5px;
+}
+
+.spreadRadius {
+  box-shadow: 10px 10px 5px 5px;
+}
+
+.color-shadow {
+  box-shadow: 10px 10px 5px 5px rgba(195, 14, 14, 0.75);
+}
+
+.inset {
+  box-shadow: inset 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Tipografias */
+/*Las importaciones suelen ir arriba de todo en el archivo css , pero para fines prácticos lo mostramos acá */
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+.font-family {
+  font-family: "Indie Flower", cursive;
+}
+
+.font-weight {
+  font-weight: bold;
+}
+
+.font-style {
+  font-style: italic;
+}
+
+.font-size {
+  font-size: 2rem;
+}
+
+.letter-spacing {
+  letter-spacing: 10px;
+}
+
+.word-spacing {
+  word-spacing: 10px;
+}
+
+.line-height {
+  line-height: 55px;
+}
+
+.text-align {
+  text-align: center; /* left | right | center | justify */
+}
+
+.text-transform {
+  text-transform: uppercase;
+}
+
+.text-decoration {
+  text-decoration: underline;
+}
+
+/* Listas */
+
+.list-none {
+  list-style-type: none;
+}
+.list-position {
+  list-style-type: circle;
+  list-style-position: outside;
+  background-color: crimson;
+}
+
+.list-img {
+  list-style-image: url("./img/messi-list-img.jpg");
+  list-style-position: inside;
+}
