@@ -1,0 +1,224 @@
+.container {
+  background-color: rgb(68, 67, 67);
+  display: flex;
+  height: 200px;
+}
+
+.caja {
+  background-color: cadetblue;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid crimson;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
+.caja-ancha {
+  width: 300px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.no-wrap {
+  flex-wrap: nowrap;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.align-end {
+  align-items: end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.caja-stretch {
+  height: auto;
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.caja-baseline-a {
+  padding-top: 50px;
+}
+
+.caja-baseline-b {
+  padding-top: 100px;
+}
+
+.caja-baseline-c {
+  padding-top: 75px;
+}
+
+.container-high {
+  height: 300px;
+}
+
+.align-content-start {
+  align-content: flex-start;
+}
+
+.align-content-end {
+  align-content: flex-end;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.align-content-space-between {
+  align-content: space-between;
+}
+
+.align-content-space-around {
+  align-content: space-around;
+}
+
+.align-content-stretch {
+  align-content: stretch;
+}
+
+/* 
+Order no necesariamente significa que si le doy el nro 2 el elemento va a quedar en la posición 2.
+Los elementos por defecto tienen order: 0, por lo tanto si pongo un numero positivo se va a ir al final 
+del contenedor, un número negativo al inicio, y depsués voy jugando con los números para ubicar las cosas donde quiero.
+*/
+.order-a {
+  background-color: red;
+  order: 2;
+}
+
+.order-b {
+  background-color: pink;
+  order: -1;
+}
+
+.container-1000 {
+  width: 1000px;
+}
+
+.caja-no-tan-ancha {
+  width: 200px;
+}
+/* 
+Lo que hace flex grow es hacer que el elemento crezca en base al espacio que hay disponible.
+Si no hay espacio disponible, no tiene ningún efecto.
+Si mi contenedor mide 1000px de ancho y cada caja mide 200px de ancho y tengo cuatro cajas,
+tengo 200px disponibles para crecer. Entonces flex grow toma las unidades que le di a mis elementos 
+y las divide en esas partes, en este ejemplo le di a un elemnto 1 y a otro 3, 1+3=4, 200px/4=50px,
+entonces el que tiene 1 va a crecer 50px (quedando en 200px+50px=250px) y el que tiene 3 crece 150px (quedando en 200px+150px=350px)
+*/
+
+.grow-a {
+  flex-grow: 1;
+}
+
+.grow-b {
+  flex-grow: 3;
+}
+
+/* 
+Shrink es lo contrario a grow, es decir, que si el contenedor es lo suficientemente grande, no va a tener ningún efecto.
+Tiene efecto cuando los elementos no entran. Se hace un cálculo como el de flex grow, con la salvedad de que ya de por sí los elementos 
+aunque no tengan flex shrink van a achicarse todos un poco. (Esto es porque por defecto vienen con la propiedad flex-shrink=1)
+La forma de evitar esto es darle flex-srhink=0 a los que no queremos que se achichen bajo ningún concepto. 
+En este ejemplo tenemos 4 cajas de 300px en un contenedor de 1000px. 300pxx3=1200px. Nos "faltan" 200px.
+A un elemento le dimos 1 y a otro 4, 4+1=5, 200px/5=40px, en decis que al que le dimos 1 se va a reducir 40px, 300px-40px=260px
+y el otro elemento le dimos 4, 4x40px=160px, nos va a estar quedando de 300px-160px, es decir 140px.
+*/
+
+.shrink-a {
+  flex-shrink: 1;
+}
+
+.shrink-b {
+  flex-shrink: 4;
+}
+
+.no-shrink {
+  flex-shrink: 0;
+}
+
+/* 
+Flex-basis puede estar refiriendo a la height o a la width de una etiqueta, SOLO APLICA A HIJOS DE CONTENEDORES FLEX,
+y hace referencia a su eje dominante, es decir que si el contenedor tiene direction row, refiere al ancho (width), 
+y con column refiere al alto (height). Esa sería una de las diferencias con aplicar directamente width o height.
+Les dejo un artículo que lo explica bien porque es un poco difícil de entender https://www.paradigmadigital.com/dev/diferencia-flex-basis-width/
+*/
+
+.basis-1 {
+  flex-basis: 200px;
+}
+.basis-2 {
+  flex-basis: 500px;
+}
+
+.basis-3 {
+  flex-basis: 150px;
+}
+
+.self-aligned {
+  align-self: center;
+}
+
+/* 
+Flow no es más que la combinación de flex-direction y flew-wrap. Osea que las líneas que les dejo comentadas 
+son exactamente lo mismo que la línea de flew-flow 
+*/
+
+.flow {
+  flex-flow: row wrap;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+}
