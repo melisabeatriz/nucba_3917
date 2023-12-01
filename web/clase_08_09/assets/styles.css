@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  /* bg colors */
+  --background: #02050e;
+  --primary: #1e50ff;
+  --secondary: #272d37;
+  --btn-bg: #050d26;
+  --bg-azul-10: #e9eeff;
+  --bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+
+  /* Text colors */
+  --text-gray: #adb9c7;
+  --text-white: #f3f4f6;
+
+  /* Decoration */
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-white);
+}
+
+header {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 100px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+  color: var(--text-white);
+}
+
+a {
+  color: var(--text-white);
+  font-size: 14px;
+}
+
+main {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: var(--text-white);
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.hero-info-paragraph {
+  color: var(--text-gray);
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.hero-link {
+  background-color: var(--primary);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.hero-card {
+  width: 300px;
+  flex-shrink: 0;
+  background-color: var(--secondary);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.hero-card img {
+  width: 100%;
+}
+
+.hero-card-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.hero-card-title h3 {
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hero-card-title span {
+  background-color: var(--primary);
+  text-align: center;
+  width: 50px;
+  padding: 3px 0px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.hero-card-creator {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.hero-card-creator img {
+  width: 40px;
+  height: 40px;
+}
+
+.hero-card-creator-info {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-card-info-small {
+  color: var(--text-gray);
+  font-size: 12px;
+  font-weight: 300px;
+}
+
+.hero-section {
+  display: flex;
+  gap: 50px;
+  max-width: 900px;
+  align-items: center;
+}
+
+section {
+  margin-top: 100px;
+}
