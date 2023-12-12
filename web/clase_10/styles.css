@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  /* bg colors */
+  --black: #02050e;
+  --grey: #272d37;
+  --white: #f0fbff;
+  --blue: #0c1221;
+  --red: #b21c05;
+  --green: #168208;
+  --yellow: #ffff00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+body {
+  background-color: var(--black);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 90%;
+  width: 90%;
+  background-color: var(--grey);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.caja {
+  width: 200px;
+  height: 200px;
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pueden escribir los gradients ustedes o lo que les sugiero es usar directamente un generador
+Les dejo mi favorito https://cssgradient.io/ */
+
+.caja1 {
+  /*radial*/
+  background: radial-gradient(#f69d3c, #3f87a6);
+  /*Repeating gradient*/
+  background: repeating-linear-gradient(#f69d3c, #3f87a6 50px);
+  /* a "x" grados*/
+  background: linear-gradient(70deg, black, white);
+  /*Hacia una dirección*/
+  background: linear-gradient(to right, #d96d7f, #4b97d1);
+}
+
+.caja2 {
+  background: linear-gradient(to right, var(--yellow), var(--white));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.caja3 {
+  background: repeating-linear-gradient(#d7d2cc, #304352 50px);
+}
+
+.caja3 span {
+  background: linear-gradient(to right, #f12711, #f5af19);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+/* 
+Recuerden que en este caso estamos desarrollando desktop first por eso los estilos "normales" son los de desktop
+y acá añadimos mediaqueries para las pantallas más chicas con los estilos que vamos a ir sobreescribiendo. 
+Que algo sea desktop first en este caso no significa que en mobile no se vaya a ver bien, 
+es más que nada una cuestión organizativa para nosotrxs y ver claramente los estilos que cambian en cada caso.
+*/
+
+@media (max-width: 800px) {
+  body {
+    background-color: var(--grey);
+  }
+
+  .container {
+    flex-direction: column;
+    background-color: var(--black);
+  }
+}
+
+@media (max-width: 400px) {
+  .caja3 {
+    display: none;
+  }
+}
