@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuestra Landing</title>
     <link rel="stylesheet" type="text/css" href="./assets/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/mediaqueries.css" />
   </head>
   <body>
     <header>
       <img src="./assets/img/logo.png" alt="Nucba NFT" />
       <nav>
+        <label for="menu-toggle" class="menu-toggle">
+          <img src="./assets/img/menu.png" alt="Menú desplegable" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="nav-list">
           <li>
             <a href="#"><b>Home</b></a>
@@ -19,7 +24,84 @@
           <li><a href="#">Youtube</a></li>
           <li><a href="#">Contactanos</a></li>
         </ul>
-        <img src="./assets/img/cart-icon.svg" alt="Carrito de compras" />
+        <label for="cart-toggle" class="cart-toggle">
+          <img src="./assets/img/cart-icon.svg" alt="Carrito de compras" />
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <div class="cart">
+          <h3>Tus NFTs</h3>
+          <div class="cart-product">
+            <img src="./assets/img/cart/cart-img.png" alt="" />
+            <div>
+              <h5>Messi</h5>
+              <p>Current bid</p>
+              <span>4.8 ETH</span>
+            </div>
+            <div class="cart-product-handler">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+          </div>
+          <div class="cart-product">
+            <img src="./assets/img/cart/cart-img.png" alt="" />
+            <div>
+              <h5>Messi</h5>
+              <p>Current bid</p>
+              <span>4.8 ETH</span>
+            </div>
+            <div class="cart-product-handler">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+          </div>
+          <div class="cart-product">
+            <img src="./assets/img/cart/cart-img.png" alt="" />
+            <div>
+              <h5>Messi</h5>
+              <p>Current bid</p>
+              <span>4.8 ETH</span>
+            </div>
+            <div class="cart-product-handler">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+          </div>
+          <div class="cart-product">
+            <img src="./assets/img/cart/cart-img.png" alt="" />
+            <div>
+              <h5>Messi</h5>
+              <p>Current bid</p>
+              <span>4.8 ETH</span>
+            </div>
+            <div class="cart-product-handler">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+          </div>
+          <div class="cart-product">
+            <img src="./assets/img/cart/cart-img.png" alt="" />
+            <div>
+              <h5>Messi</h5>
+              <p>Current bid</p>
+              <span>4.8 ETH</span>
+            </div>
+            <div class="cart-product-handler">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+          </div>
+          <hr />
+          <div class="cart-price">
+            <b>Total:</b>
+            <span>18.3 ETH </span>
+          </div>
+          <button class="cart-button">Comprar</button>
+        </div>
       </nav>
     </header>
     <main>
@@ -258,8 +340,8 @@
               <button>Add</button>
             </div>
           </div>
-          <button class="view-more-btn">Ver más</button>
         </div>
+        <button class="view-more-btn">Ver más</button>
       </section>
       <footer>
         <div>
