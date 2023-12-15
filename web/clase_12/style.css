@@ -1,94 +1,129 @@
 /* Estilos de la clase */
 
 .container {
+  background-color: #282828;
+  display: flex;
+  padding: 16px;
+  border-radius: 16px;
+  margin: 20px 0;
+  gap: 20px;
 }
 
-.text-span {
-}
-
-.hover {
-}
-
-.hover:hover {
-}
-
-/* active */
-.active:active {
-}
-
-/* visited */
-.visited:visited {
-}
-
-/* link */
-.link:link {
-}
-
-/* focus */
-
-.focus-input {
-}
-
-.focus-input:focus {
-}
-
-/* Cajas */
-.flex {
-}
 .caja {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* first-child */
-.first .caja:first-child {
+.lalala {
+  background-color: pink;
+  padding: 10px;
+  border-radius: 5px;
+  border: 5px solid transparent;
+  width: 350px;
 }
 
-/* last-child */
-.last .caja:last-child {
+.lalala:hover {
+  background-color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+  border: 5px solid yellow;
 }
 
-/* first-of-type  */
+.active:hover {
+  color: pink;
+  text-decoration: underline;
+}
+
+.active:active {
+  color: crimson;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.visited:visited {
+  color: blueviolet;
+}
+
+.link:link {
+  color: aqua;
+}
+
+.focus:focus {
+  background-color: aqua;
+  border: 2px solid blue;
+}
+
+.active:focus {
+  font-weight: bold;
+}
+
+.first-child .caja:first-child {
+  background-color: blueviolet;
+}
+
+.last-child .caja:last-child {
+  background-color: aquamarine;
+}
+
 .first-of-type .caja:first-of-type {
+  background-color: bisque;
 }
 
-/* nth-child odd*/
 .nth-child-odd .caja:nth-child(odd) {
+  background-color: pink;
 }
 
-/* nth-child even */
 .nth-child-even .caja:nth-child(even) {
+  background-color: yellow;
 }
 
-/* nth-child-number  */
-.nth-child-number .caja:nth-child(3) {
+.nth-child-number .caja:nth-child(3),
+.nth-child-number .caja:nth-child(5) {
+  background-color: green;
 }
 
-/* nth-child-n */
-.nth-child-n .caja:nth-child(2n) {
+.nth-child-number-n .caja:nth-child(3n) {
+  background-color: darkmagenta;
 }
 
-/* nth-child-number-n */
-.nth-child-number-n .caja:nth-child(3n + 1) {
+.nth-child-number-n-number .caja:nth-child(4n + 1) {
+  background-color: darkgreen;
 }
 
-/* first-letter */
 .first-letter::first-letter {
+  color: crimson;
+  font-size: 3rem;
+  font-family: serif;
+  background-color: antiquewhite;
 }
 
-/* first-line */
-.first-line::first-line {
+.primera-linea::first-line {
+  color: crimson;
+  font-size: 4rem;
+  font-weight: bold;
 }
 
-/* before */
-.before::before {
+.p-con-before::before {
+  content: " 🤩 ";
+  font-size: 3rem;
 }
 
-/* after */
-.after::after {
+.p-con-after::after {
+  content: " 🍕 ";
+  font-size: 5rem;
 }
 
-/* placeholder */
-.input-placeholder {
+.placeholder {
+  background-color: #a3a3a3;
+  width: 300px;
 }
 
-.input-placeholder::placeholder {
+.placeholder::placeholder {
+  color: black;
+  font-weight: bold;
 }

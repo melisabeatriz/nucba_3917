@@ -26,6 +26,9 @@
     <!--------------------------- Hover ----------------------------->
 
     <h2>Hover</h2>
+    <div class="container">
+      <a href="#" class="lalala">Pasame el mouse por encima</a>
+    </div>
 
     <hr class="hr" />
 
@@ -34,43 +37,156 @@
     <h2>Active | Link | Visited</h2>
 
     <span class="text-span">👉 active</span>
+    <div class="container">
+      <a href="#" class="active">Soy un link</a>
+    </div>
 
     <span class="text-span">👉 visited</span>
+    <div class="container">
+      <a href="https://www.nucba.com.ar" class="visited">Soy un link a Nucba</a>
+    </div>
 
     <span class="text-span">👉 link</span>
+    <div class="container">
+      <a href="https://www.wikipedia.com/" class="link"
+        >Soy un link a Wikipedia</a
+      >
+    </div>
 
     <hr class="hr" />
     <!--------------------------- Focus ----------------------------->
     <h2>Focus</h2>
+    <div class="container">
+      <label for="name-input">Nombre:</label>
+      <input id="name-input" class="focus" />
+    </div>
 
     <!--------------------------- Childs ----------------------------->
     <h2>Childs</h2>
 
     <span class="text-span">👉 first-child</span>
+    <div class="container first-child">
+      <div class="caja">1</div>
+      <div class="caja">2</div>
+      <span class="caja">3</span>
+      <div class="caja">4</div>
+    </div>
 
     <span class="text-span">👉 last-child</span>
+    <div class="container last-child">
+      <div class="caja">1</div>
+      <div class="caja">2</div>
+      <div class="caja">3</div>
+      <div class="caja">4</div>
+      <div class="caja">5</div>
+    </div>
 
     <span class="text-span">👉 first of type</span>
+    <div class="container first-of-type">
+      <div class="caja">1</div>
+      <section class="caja">2</section>
+      <div class="caja">3</div>
+      <span class="caja">4</span>
+      <span class="caja">5</span>
+      <p class="caja">6</p>
+    </div>
 
     <span class="text-span">👉 nth-child(odd)</span>
+    <div class="container nth-child-odd">
+      <div class="caja">A</div>
+      <div class="caja">B</div>
+      <div class="caja">C</div>
+      <div class="caja">D</div>
+      <div class="caja">E</div>
+    </div>
 
     <span class="text-span">👉 nth-child(even)</span>
+    <div class="container nth-child-even">
+      <div class="caja">A</div>
+      <div class="caja">B</div>
+      <div class="caja">C</div>
+      <div class="caja">D</div>
+      <div class="caja">E</div>
+    </div>
 
     <span class="text-span">👉 nth-child(number)</span>
+    <div class="container nth-child-number">
+      <div class="caja">A</div>
+      <div class="caja">B</div>
+      <div class="caja">C</div>
+      <div class="caja">D</div>
+      <div class="caja">E</div>
+    </div>
+
+    <div class="container nth-child-number-n">
+      <div class="caja">A</div>
+      <div class="caja">B</div>
+      <div class="caja">C</div>
+      <div class="caja">D</div>
+      <div class="caja">E</div>
+      <div class="caja">F</div>
+      <div class="caja">G</div>
+      <div class="caja">H</div>
+      <div class="caja">I</div>
+      <div class="caja">J</div>
+    </div>
 
     <span class="text-span">👉 nth-child(number n + number)</span>
+    <div class="container nth-child-number-n-number">
+      <div class="caja">A</div>
+      <div class="caja">B</div>
+      <div class="caja">C</div>
+      <div class="caja">D</div>
+      <div class="caja">E</div>
+      <div class="caja">F</div>
+      <div class="caja">G</div>
+      <div class="caja">H</div>
+      <div class="caja">I</div>
+      <div class="caja">J</div>
+    </div>
 
     <hr class="hr" />
     <!--------------------------- Pseudoelementos ----------------------------->
     <h2>Pseudoelementos</h2>
     <span class="text-span">👉 First letter</span>
+    <div class="container">
+      <p class="first-letter">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+        dolores corrupti, iusto libero nam recusandae ex temporibus veniam
+        mollitia, dignissimos dolor impedit necessitatibus placeat officiis
+        veritatis? Quo consequatur dolore tenetur!
+      </p>
+    </div>
 
     <span class="text-span">👉 First line</span>
+    <div class="container">
+      <p class="primera-linea">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+        dolores corrupti, iusto libero nam recusandae ex temporibus veniam
+        mollitia, dignissimos dolor impedit necessitatibus placeat officiis
+        veritatis? Quo consequatur dolore tenetur!
+      </p>
+    </div>
 
     <span class="text-span">👉 before</span>
+    <div class="container">
+      <p class="p-con-before">Hola, tengo un before</p>
+    </div>
 
     <span class="text-span">👉 after</span>
+    <div class="container">
+      <p class="p-con-after">Hola, tengo un after</p>
+    </div>
 
     <span class="text-span">👉 placeholder</span>
+    <div class="container">
+      <label for="placerholder-example">Editando el placeholder</label>
+      <input
+        id="placerholder-example"
+        type="text"
+        placeholder="Hola! Soy un placeholder"
+        class="placeholder"
+      />
+    </div>
   </body>
 </html>
