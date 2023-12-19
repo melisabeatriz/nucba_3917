@@ -1,0 +1,175 @@
+.container {
+  background-color: #282828;
+  display: flex;
+  padding: 16px;
+  border-radius: 16px;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.text-span {
+  color: #ff005c;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.caja {
+  width: 200px;
+  height: 200px;
+  background: crimson;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Translate */
+
+/*Creamos la animación*/
+@keyframes translateX {
+}
+
+/*Usamos la animación*/
+.translateX {
+}
+
+/*Creamos la animación*/
+@keyframes translateY {
+}
+
+/*Usamos la animación*/
+.translateY {
+}
+
+/*Creamos la animación*/
+@keyframes translate {
+}
+
+/*Usamos la animación*/
+.translate {
+}
+
+/* Rotate */
+
+/*Creamos la animación*/
+@keyframes rotate {
+}
+
+/*Usamos la animación*/
+.rotate {
+}
+
+/*Creamos la animación*/
+@keyframes rotate-negative {
+}
+
+/*Usamos la animación*/
+.rotate-negative {
+}
+
+/* Scale */
+
+/*Creamos la animación*/
+@keyframes scaleX {
+}
+
+/*Usamos la animación*/
+.scaleX {
+}
+
+/*Creamos la animación*/
+@keyframes scaleY {
+}
+
+/*Usamos la animación*/
+.scaleY {
+}
+
+/*Creamos la animación*/
+@keyframes scale {
+}
+
+/*Usamos la animación*/
+.scale {
+}
+
+/* Skew */
+
+/*Creamos la animación*/
+@keyframes skewX {
+}
+
+/* Usamos la animación */
+.skewX {
+}
+
+/*Creamos la animación*/
+@keyframes skewY {
+}
+
+/* Usamos la animación */
+.skewY {
+}
+
+/*Creamos la animación*/
+@keyframes skew {
+}
+
+/* Usamos la animación */
+.skew {
+}
+
+/* transition */
+.transition-duration {
+}
+
+.transition-duration:hover {
+}
+
+/* transition timing function */
+
+.transition-timing {
+}
+
+.transition-timing:hover {
+}
+
+/* transition timing delay*/
+.transition-delay {
+}
+
+.transition-delay:hover {
+}
+
+/* transition shorthand */
+.transition-shorthand {
+}
+.transition-shorthand:hover {
+}
+
+@keyframes moverCaja {
+}
+
+.animada {
+}
+
+.infinita {
+}
+
+.alternada {
+}
+
+.delay {
+}
+
+.timing {
+}
+
+.paused:hover {
+}
+
+.animation-shorthand {
+}
+
+.animation-shorthand:hover {
+}
