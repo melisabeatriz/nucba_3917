@@ -23,25 +23,68 @@
     <hr class="hr" />
 
     <!--------------------------- Transformaciones ----------------------------->
+    <h2>Z-index</h2>
+    <div class="container">
+      <div class="caja" style="z-index: 2">1</div>
+      <div class="caja z-index">2</div>
+    </div>
+
+    <hr class="hr" />
+    <!--------------------------- Transformaciones ----------------------------->
 
     <h2>Transformaciones: translate</h2>
     <span class="text-span">👉 transform: translateX() </span>
+    <div class="container">
+      <div class="caja translateX">Translate X</div>
+    </div>
 
     <span class="text-span">👉 transform: translateY() </span>
+    <div class="container">
+      <div class="caja translateY">Translate Y</div>
+    </div>
 
     <span class="text-span">👉 transform: translate() </span>
+    <div class="container">
+      <div class="caja translate">Translate</div>
+    </div>
 
     <hr class="hr" />
 
     <h2>Transformaciones: rotate</h2>
+    <div class="container center">
+      <div class="caja rotate">Rotate</div>
+      <div class="caja rotate-negative">Rotate en el otro sentido</div>
+    </div>
 
     <hr class="hr" />
 
     <h2>Transformaciones: scale</h2>
+    <div class="container center">
+      <div class="caja scaleX">Scale X</div>
+    </div>
+
+    <div class="container center">
+      <div class="caja scaleY">Scale Y</div>
+    </div>
+
+    <div class="container center">
+      <div class="caja scale">Scale</div>
+    </div>
 
     <hr class="hr" />
 
     <h2>Transformaciones: skew</h2>
+    <div class="container center">
+      <div class="caja skewX">Skew X</div>
+    </div>
+
+    <div class="container center">
+      <div class="caja skewY">Skew Y</div>
+    </div>
+
+    <div class="container center">
+      <div class="caja skew">Skew</div>
+    </div>
 
     <hr class="hr" />
 
@@ -55,41 +98,83 @@
     <span class="text-span">👉 transition-duration </span>
     <p class="code">transition-duration: 0 | 0.5s</p>
 
+    <div class="container">
+      <div class="caja transition-duration">Transition duration</div>
+    </div>
+
     <span class="text-span">👉 transition-timing-function</span>
     <p class="code">transition-timing-function: ease | ease-in | ease-out</p>
 
+    <div class="container">
+      <div class="caja transition-timing">Transition timing</div>
+    </div>
+
     <span class="text-span">👉 transition-delay</span>
     <p class="code">transition-delay: 1s</p>
+    <div class="container">
+      <div class="caja transition-delay">Transition delay</div>
+    </div>
 
     <span class="text-span">👉 transition shorthand</span>
     <p class="code">transition: all 2s 1s ease;</p>
+    <div class="container">
+      <div class="caja transition-shorthand">Transition shorthand</div>
+    </div>
 
     <!--------------------------- Animaciones ----------------------------->
 
     <h2>Animaciones</h2>
     <h3>Pasos para crear una animación</h3>
     <span class="text-span">👉 1 - Colocamos una caja sin animar</span>
+    <div class="container">
+      <div class="caja">Caja sin animar</div>
+    </div>
 
     <span class="text-span"
       >👉 2 - Creamos "moverCaja" y la aplicamos dandole una duración</span
     >
+    <div class="container">
+      <div class="caja animada">Caja animada</div>
+    </div>
 
     <span class="text-span">👉 3 - Convertimos la animación en infinita</span>
+    <div class="container">
+      <div class="caja animada infinita">Caja animada</div>
+    </div>
 
     <span class="text-span"
       >👉 4 - Hacemos que la animación alterne su dirección</span
     >
+    <div class="container">
+      <div class="caja animada infinita alternada">Caja animada</div>
+    </div>
 
     <span class="text-span"
       >👉 5 - Le agregamos un delay (Solo aplica a la primera iteración)</span
     >
+    <div class="container">
+      <div class="caja animada infinita alternada delay">Caja animada</div>
+    </div>
 
     <span class="text-span">👉 6 - Le agregamos una timing function</span>
+    <div class="container">
+      <div class="caja animada infinita alternada delay timing">
+        Caja animada
+      </div>
+    </div>
 
     <span class="text-span">👉 7 - Le cambiamos el estado en hover</span>
+    <div class="container">
+      <div class="caja animada infinita alternada timing paused">
+        Caja animada
+      </div>
+    </div>
 
     <span class="text-span"
       >👉 8 - Hacemos todo lo anterior con el shorthand animation</span
     >
+    <div class="container">
+      <div class="caja animation-shorthand">Caja animada</div>
+    </div>
   </body>
 </html>

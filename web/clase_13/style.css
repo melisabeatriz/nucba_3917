@@ -7,6 +7,10 @@
   gap: 20px;
 }
 
+.center {
+  justify-content: center;
+}
+
 .text-span {
   color: #ff005c;
   font-size: 20px;
@@ -23,153 +27,284 @@
   align-items: center;
 }
 
+.z-index {
+  background-color: aqua;
+  position: absolute;
+  z-index: 7;
+  transform: translateX(40px);
+  transform: rotate(10deg);
+}
+
 /* Translate */
 
 /*Creamos la animación*/
 @keyframes translateX {
+  0% {
+    transform: translateX(0);
+    background-color: antiquewhite;
+  }
+  50% {
+    background-color: pink;
+  }
+  100% {
+    transform: translateX(400px);
+    background-color: aquamarine;
+  }
 }
 
 /*Usamos la animación*/
 .translateX {
+  animation: translateX 4s infinite;
+  color: #282828;
 }
 
 /*Creamos la animación*/
 @keyframes translateY {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50px);
+  }
 }
 
 /*Usamos la animación*/
 .translateY {
+  animation: translateY 4s infinite;
 }
 
 /*Creamos la animación*/
 @keyframes translate {
+  0% {
+    transform: translate(0);
+  }
+  /* 90% {
+    transform: translate(50px, 10px);
+  } */
+  100% {
+    transform: translate(300px, 50px);
+  }
 }
 
 /*Usamos la animación*/
 .translate {
+  animation: translate 4s infinite;
 }
 
 /* Rotate */
 
 /*Creamos la animación*/
 @keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(calc(360deg * 4));
+  }
 }
 
 /*Usamos la animación*/
 .rotate {
+  animation: rotate 5s infinite;
 }
 
 /*Creamos la animación*/
 @keyframes rotate-negative {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
 }
 
 /*Usamos la animación*/
 .rotate-negative {
+  animation: rotate-negative 5s infinite;
+  background-color: violet;
 }
 
 /* Scale */
 
 /*Creamos la animación*/
 @keyframes scaleX {
+  0% {
+    transform: scaleX(0.5);
+  }
+  100% {
+    transform: scaleX(2);
+  }
 }
 
 /*Usamos la animación*/
 .scaleX {
+  animation: scaleX 5s infinite;
 }
 
 /*Creamos la animación*/
 @keyframes scaleY {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(2);
+  }
 }
 
 /*Usamos la animación*/
 .scaleY {
+  animation: scaleY 5s infinite;
 }
 
 /*Creamos la animación*/
 @keyframes scale {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(2, 0.5);
+  }
 }
 
 /*Usamos la animación*/
 .scale {
+  animation: scale 5s infinite;
 }
 
 /* Skew */
 
 /*Creamos la animación*/
 @keyframes skewX {
+  0% {
+    transform: skewX(0);
+  }
+  100% {
+    transform: skewX(40deg);
+  }
 }
 
 /* Usamos la animación */
 .skewX {
+  animation: skewX 5s infinite;
 }
 
 /*Creamos la animación*/
 @keyframes skewY {
+  0% {
+    transform: skewY(0);
+  }
+  100% {
+    transform: skewY(40deg);
+  }
 }
 
 /* Usamos la animación */
 .skewY {
+  animation: skewY 5s infinite;
 }
 
 /*Creamos la animación*/
 @keyframes skew {
+  0% {
+    transform: skew(0);
+  }
+  100% {
+    transform: skew(40deg, 20deg);
+  }
 }
 
 /* Usamos la animación */
 .skew {
+  animation: skew 5s infinite;
 }
 
 /* transition */
 .transition-duration {
+  transition-property: background-color;
+  transition-duration: 5s;
 }
 
 .transition-duration:hover {
+  background-color: violet;
+  width: 250px;
+  height: 250px;
 }
 
 /* transition timing function */
 
 .transition-timing {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
 }
 
 .transition-timing:hover {
+  background-color: violet;
+  width: 250px;
+  height: 250px;
 }
 
 /* transition timing delay*/
 .transition-delay {
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  transition-delay: 1s;
 }
 
 .transition-delay:hover {
+  height: 250px;
 }
 
 /* transition shorthand */
 .transition-shorthand {
+  transition: all 2s 1s ease-out;
 }
 .transition-shorthand:hover {
+  background-color: whitesmoke;
 }
 
 @keyframes moverCaja {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(500px);
+  }
 }
 
 .animada {
+  animation: moverCaja 2s;
 }
 
 .infinita {
+  animation-iteration-count: infinite;
 }
 
 .alternada {
+  animation-direction: alternate;
 }
 
 .delay {
+  animation-delay: 4s;
 }
 
 .timing {
+  animation-timing-function: ease-in-out;
+}
+
+.paused {
+  animation-play-state: paused;
 }
 
 .paused:hover {
+  animation-play-state: running;
 }
 
 .animation-shorthand {
+  animation: moverCaja 4s ease-in-out 2s infinite alternate;
 }
 
 .animation-shorthand:hover {
+  animation-play-state: paused;
 }
