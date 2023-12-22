@@ -51,6 +51,7 @@ nav {
   display: flex;
   gap: 30px;
   color: var(--text-white);
+  z-index: 30;
 }
 
 a {
@@ -355,6 +356,7 @@ footer {
   overflow: auto;
   height: calc(100vh - 73px);
   display: none;
+  z-index: 20;
 }
 
 .cart-product {

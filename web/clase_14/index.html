@@ -4,8 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuestra Landing</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicons/favicon-16x16.png"
+    />
     <link rel="stylesheet" type="text/css" href="./assets/styles.css" />
     <link rel="stylesheet" type="text/css" href="./assets/mediaqueries.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/animaciones.css" />
   </head>
   <body>
     <header>
@@ -17,15 +31,21 @@
         <input type="checkbox" id="menu-toggle" />
         <ul class="nav-list">
           <li>
-            <a href="#"><b>Home</b></a>
+            <a href="#home"><b>Home</b></a>
           </li>
-          <li><a href="#">Descubre</a></li>
-          <li><a href="#">BTC</a></li>
-          <li><a href="#">Youtube</a></li>
-          <li><a href="#">Contactanos</a></li>
+          <li><a href="#discover">Descubre</a></li>
+          <li><a href="#products">BTC</a></li>
+          <li>
+            <a href="https://www.youtube.com/c/Nucbaok" target="_blank"
+              >Youtube</a
+            >
+          </li>
+          <li>
+            <a href="https://nucba.com.ar/" target="_blank">Contactanos</a>
+          </li>
         </ul>
         <label for="cart-toggle" class="cart-toggle">
-          <img src="./assets/img/cart-icon.svg" alt="Carrito de compras" />
+          <i class="fa-solid fa-cart-shopping cart-icon"></i>
         </label>
         <input type="checkbox" id="cart-toggle" />
         <div class="cart">
@@ -102,12 +122,13 @@
           </div>
           <button class="cart-button">Comprar</button>
         </div>
+        <div class="overlay"></div>
       </nav>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero-section" id="home">
         <div class="hero-info">
-          <h1>Descubre la nueva era de Crypto</h1>
+          <h1>Descubre la nueva era de <span>Crypto</span></h1>
           <p class="hero-info-paragraph">
             NUCBA NFT es el primer Marketplace educativo tecnológico de NFT, que
             son elementos digitales épicos que realmente puedes poseer. Los
@@ -167,7 +188,7 @@
           </div>
         </div>
       </section>
-      <section class="discover-section">
+      <section class="discover-section" id="discover">
         <div class="discover-info">
           <h2>Descubre una nueva era de colecciones</h2>
           <div class="discover-info-description">
@@ -194,7 +215,7 @@
           </div>
         </div>
       </section>
-      <section class="products-section">
+      <section class="products-section" id="products">
         <h2>Hot NFTs</h2>
         <div class="products-selector">
           <button class="selected">🎨 Todas</button>
